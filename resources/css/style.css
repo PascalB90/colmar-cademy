@@ -111,6 +111,11 @@
          margin-top: 1rem;
          font-size: 1.2rem;
      }
+     .banner-desc button:hover {
+        background: #A9A9A9;
+         cursor: pointer;
+     }
+
     /* -----------------------------------END HEADER---------------------------------------*/
     /* -----------------------------------START STORY---------------------------------------*/
 
