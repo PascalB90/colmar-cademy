@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <meta name="author" content="Pascal Breitrueck">
         <title>Colmar Academy</title>
+        <link rel="stylesheet" href="./resources/css/font-awesome-light.css">
+        <link rel="stylesheet" href="./resources/css/font-awesome-regular.css">
+        <link rel="stylesheet" href="./resources/css/font-awesome-core.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -60,7 +64,8 @@
                 <div class="next-storys flex-container">
                     <article class="flex-container">
                         <div class="preview-img">
-                            <img src="./resources/images/information-orientation.jpg" alt="">
+                            <img class="desktop-img" src="./resources/images/information-orientation.jpg" alt="">
+                            <img class="mobile-img" src="./resources/images/information-orientation-mobile.jpg" alt="">
                         </div>
                         <div class="flex-container next-description">
                             <h3>Oriantation Date</h3>
@@ -70,7 +75,8 @@
                     </article>
                     <article class="flex-container">
                         <div class="preview-img">
-                            <img src="./resources/images/information-campus.jpg" alt="">
+                            <img class="desktop-img" src="./resources/images/information-campus.jpg" alt="">
+                            <img class="mobile-img" src="./resources/images/information-campus-mobile.jpg" alt="">
                         </div>
                         <div class="flex-container next-description">
                             <h3>Our Campus</h3>
@@ -80,7 +86,8 @@
                     </article>
                     <article class="flex-container">
                         <div class="preview-img">
-                            <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                            <img class="desktop-img" src="./resources/images/information-guest-lecture.jpg" alt="">
+                            <img class="mobile-img" src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
                         </div>
                         <div class="flex-container next-description">
                             <h3>Our guest lecture</h3>
@@ -90,6 +97,77 @@
                     </article>
                 </div>
             </section>
+            <section class="courses flex-container">
+                <h2>Start learning</h2>
+                <div class="row flex-container">
+                    <div class="course flex-container">
+                        <div class="course-container-software">
+                            <h3 class="show-info">Software engineering</h3>
+                            <div class="course-information flex-container">
+                                <h4>Courses</h4>
+                                <p>Web Development, Mobile Development, iOT, APIs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course flex-container">
+                        <div class="course-container-art">
+                            <h3 class="show-info">Computer art</h3>
+                            <div class="course-information flex-container">
+                                <h4>Courses</h4>
+                                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course flex-container">
+                         <div class="course-container-design">
+                             <h3 class="show-info">Design</h3>
+                             <div class="course-information flex-container">
+                                 <h4>Courses</h4>
+                                 <p>User Experience Design, User Research, Visual Design</p>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="row flex-container">
+                    <div class="course flex-container">
+                        <div class="course-container-data">
+                            <h3 class="show-info">Data</h3>
+                            <div class="course-information flex-container">
+                                <h4>Courses</h4>
+                                <p>Data Science, Big Data, SQL, Data Visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course flex-container">
+                        <div class="course-container-business">
+                            <h3 class="show-info">Business</h3>
+                            <div class="course-information flex-container">
+                                <h4>Courses</h4>
+                                <p>Product Development, Business, Development Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course flex-container">
+                        <div class="course-container-marketing">
+                            <h3 class="show-info">Marketing</h3>
+                            <div class="course-information flex-container">
+                                <h4>Courses</h4>
+                                <p>Analytics, Content Marketing, Mobile Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>+
         </main>
+
+        <script>
+            $( document ).ready(function() {
+                $('.course-information').hide();
+                $ ('.show-info').click(function () {
+                    $(this).next('.course-information').slideToggle('800','');
+                })
+            });
+        </script>
+
     </body>
 </html>
