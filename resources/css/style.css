@@ -1,0 +1,665 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500');
+    @font-face { font-family: 'font-awesome';
+        src: url('./../webfonts/fontawesome-regular-400.svg'); }
+
+    html {
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+    /* -----------------------------------START HEADER---------------------------------------*/
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+    }
+
+    .brand-container {
+        align-items: center;
+    }
+
+    .brand-logo {
+        padding-left: 1.5rem;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .brand-name span {
+        color: #A9A9A9;
+        font-weight: 300;
+    }
+
+    nav ul {
+        margin: 0;
+        list-style: none;
+        padding-right: 1.5rem;
+    }
+
+    nav ul li {
+        padding-right: 1rem;
+    }
+
+    nav ul li:last-child {
+        padding-right: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #A9A9A9;
+    }
+
+    nav ul li a:hover {
+        color: #000000;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+    /* -----------------------------------END HEADER---------------------------------------*/
+    /* -----------------------------------START JUMBO---------------------------------------*/
+
+    .jumbo {
+        background: #F3F5F5;
+    }
+
+     .banner-img {
+        width: 60%;
+        margin: 2rem 1.5rem;
+    }
+
+     .banner-img img {
+        width: 100%;
+     }
+
+     .banner-desc {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 40%;
+         padding-top: 5rem;
+         padding-left: 1.5rem;
+         padding-right: 3rem;
+    }
+
+     .banner-desc h1 {
+         font-size: 2.8rem;
+         font-weight: bold !important;
+         color: #4A4A4A;
+     }
+
+     .banner-desc p {
+         font-size: 1.5rem;
+         color: #4A4A4A;
+         font-weight: 600;
+         letter-spacing: 1px;
+     }
+
+     .banner-desc button {
+         width: 100%;
+         background: #4A4A4A;
+         color: white;
+         padding: 1rem 0;
+         border: none;
+         margin-top: 1rem;
+         font-size: 1.2rem;
+     }
+    /* -----------------------------------END HEADER---------------------------------------*/
+    /* -----------------------------------START STORY---------------------------------------*/
+
+     .main-story {
+         width: 60%;
+         margin-left: .5rem;
+     }
+
+     .main-img {
+         margin: 2rem 1.5rem;
+     }
+
+     .main-img img {
+         width: 100%;
+     }
+
+     .main-story-content {
+         margin: 2rem 1.5rem;
+     }
+
+     .main-story-content h2{
+         margin: 2rem 0 1.5rem 0;
+         font-size: 2.4rem;
+         font-family: Verdana, sans-serif;
+         color: #4A4A4A;
+     }
+
+     .main-story-content small{
+         display: block;
+         padding: 2rem 0;
+     }
+
+     .main-story-content p {
+         font-weight: lighter;
+         color: #4A4A4A;
+         font-size: 1.5rem;
+     }
+
+     .mobile-img {
+         display: none;
+     }
+
+     .next-storys {
+         flex-direction: column;
+         width: 40%;
+         border-left: 0.5px solid lightgray;
+         margin: 0 1.5rem;
+     }
+
+     .next-storys h3 {
+         font-size: 2rem;
+         color: #4A4A4A;
+         margin-bottom: 0;
+     }
+
+     .next-storys p{
+         color: #4A4A4A;
+         font-weight: 200;
+         font-size: 1.3rem;
+     }
+
+     .next-storys a {
+         color: lightblue;
+         text-decoration: none;
+         font-size: 1.3rem;
+     }
+
+     .next-storys a:hover {
+         color: cornflowerblue;
+     }
+
+     .next-storys article {
+         border-bottom: 4px double lightgray;
+     }
+     .next-storys article:hover {
+         background: #D8D8D8;
+     }
+
+    .next-description {
+        flex-direction: column;
+        width: 65%;
+        padding-left: 2rem;
+        justify-content: center;
+    }
+
+    .preview-img {
+        padding: 2rem 0 1rem 1.5rem;
+    }
+
+    .preview-img img {
+        width: 100%;
+        height: auto;
+    }
+    /* -----------------------------------END STORY---------------------------------------*/
+    /* -----------------------------------START COURSES---------------------------------------*/
+
+    .courses{
+        flex-direction: column;
+        background: #F3F5F5;
+        padding: 2rem 0;
+    }
+
+    .courses h2 {
+        margin: 2rem 0 1.5rem 0;
+        font-size: 2.4rem;
+        font-family: Verdana, sans-serif;
+        color: #4A4A4A;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .course {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        flex-shrink: 1;
+        width: 25%;
+        color: white;
+    }
+
+    .course-container-software{
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-software.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-container-art{
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-computer-art.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-container-design {
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-design.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-container-data{
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-data.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-container-business {
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-business.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-container-marketing {
+        height: 22rem;
+        width: 100%;
+        background: url('./../images/course-marketing.jpg');
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .off {
+        display: none
+    }
+
+    .course-heading {
+        margin-top: 8rem;
+        font-weight: 300;
+        color: white;
+        letter-spacing: 3px;
+        text-shadow: grey 1px 1px;
+        margin-bottom: 0;
+    }
+
+    .course img {
+        width: 100%;
+    }
+
+    .course button {
+        margin-bottom: 1rem;
+    }
+
+    .course h3 {
+        font-weight: 300;
+        color: white;
+        letter-spacing: 3px;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    .course-information {
+        flex-direction: column;
+        height:  22rem;
+        color: white;
+        width: 100%;
+        background: black;
+        opacity: 0.6;
+    }
+
+    .course p {
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .course-information h4 {
+        font-size: 1.3rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .row {
+        margin: 0 5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .show-info {
+        border: none;
+        font-size: 3rem;
+    }
+
+    .show-info h3 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .show-info:hover {
+        color: #D8D8D8;
+    }
+
+    .mobil-courses {
+        display: none;
+    }
+    /* -----------------------------------END COURSES---------------------------------------*/
+    /* -----------------------------------START MOVIE---------------------------------------*/
+
+    .movie-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-section h2 {
+        margin: 2rem 0 1.5rem 0;
+        font-size: 2.4rem;
+        font-family: Verdana, sans-serif;
+        color: #4A4A4A;
+    }
+
+    .movie-container {
+        flex-direction: column;
+        width: 60%;
+        margin-left:1.5rem;
+    }
+
+    .movie-container h3 {
+        padding-left: 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #4A4A4A;
+        letter-spacing: 3px;
+    }
+
+    .movie-container p {
+        color: #4A4A4A;
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    .movie-container video {
+        width: 100%;
+    }
+
+    .movie-side {
+        flex-direction: column;
+        margin-left: 1.5rem;
+        width: 40%;
+    }
+
+    .movie-img-container {
+        width: 35%;
+    }
+
+    .movie-side img {
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .movie-side-content {
+        width: 65%;
+    }
+
+    .movie-side-content h3 {
+        padding-left: 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #4A4A4A;
+        letter-spacing: 3px;
+    }
+
+    .movie-side-content p {
+        padding-left: 1rem;
+        color: #4A4A4A;
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    .movie-side article:hover {
+        background: #A9A9A9;
+    }
+
+    /* -----------------------------------END MOVIE---------------------------------------*/
+    /* -----------------------------------START FOOTER---------------------------------------*/
+
+    footer {
+        margin: 1rem 1.5rem 0 1rem;
+        justify-content: space-between;
+        color: #4A4A4A;
+        height: 5rem;
+        font-weight: 300;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    footer a {
+        color: #4A4A4A;
+        text-decoration: none;
+        padding-left: 1rem;
+    }
+
+    footer a:hover {
+        color: black;
+    }
+
+    /* -----------------------------------END FOOTER---------------------------------------*/
+
+
+@media only screen and (max-width: 1700px) {
+
+    .course:nth-child(2){
+        display: none;
+    }
+
+    .course {
+        width: 40%;
+    }
+
+    .movie-container {
+        width: 50%;
+        margin-left:1.5rem;
+    }
+
+    .movie-side article {
+        flex-direction: column;
+    }
+
+}
+
+    /* -----------------------------------START TABLET---------------------------------------*/
+
+@media only screen and (max-width: 1165px) {
+
+    .banner-desc {
+        width: 60%;
+        padding-top: 1.5rem;
+    }
+
+    .course {
+        width: 100%;
+    }
+
+    .main-story {
+        display: none
+    }
+
+    .next-storys {
+        width: 100%;
+        border: none;
+    }
+
+    .next-storys article {
+        border: none;
+    }
+
+    .movie-side {
+        display: none;
+    }
+
+    .movie-container {
+        width: 100%;
+        margin: 0 1.5rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+
+    .jumbo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-desc {
+        padding: 0 0 2rem 0;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img img {
+        width:95%;
+    }
+}
+
+    /* -----------------------------------END TABLET---------------------------------------*/
+    /* -----------------------------------START MOBIL---------------------------------------*/
+
+@media only screen and (max-width: 760px) {
+
+    .banner-desc {
+        width: 95%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .mobile-nav ul li {
+        transition: opacity 0.3s ease-in;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-nav ul li a, .mobile-nav ul li a img {
+        height: 2.5rem;
+    }
+
+    .mobile-nav ul li:hover {
+        opacity: 0.7;
+        transform: rotate(10deg)
+    }
+
+    .brand-container, .main-nav {
+        display: none;
+    }
+
+    .course{
+        margin: 0;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: flex;
+    }
+
+    .preview-img {
+        padding: 0;
+    }
+
+    .next-storys article {
+        flex-direction: column;
+        padding-bottom: 4rem;
+        border: none;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .courses {
+        display: none;
+    }
+
+    .mobil-courses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobil-courses h3 {
+        background: lightgray;
+        padding: 1.5rem 0 1.5rem 1rem;
+        margin: 0.25rem 1.5rem;
+    }
+
+    .mobil-courses h3 a {
+        color: #4A4A4A;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .mobil-courses h3:hover {
+        background: #A9A9A9;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+        height: 3rem;
+    }
+
+    footer span {
+        display: none;
+    }
+
+    footer p {
+        padding: 1rem 0;
+    }
+
+}
+    /* -----------------------------------END MOBIL---------------------------------------*/
+
+  
