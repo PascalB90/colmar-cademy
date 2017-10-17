@@ -4,27 +4,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Pascal Breitrueck">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Colmar Academy</title>
         <link rel="stylesheet" href="./resources/css/font-awesome-light.css">
         <link rel="stylesheet" href="./resources/css/font-awesome-regular.css">
         <link rel="stylesheet" href="./resources/css/font-awesome-core.css">
+        <link rel="stylesheet" href="./resources/css/normalize.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <header>
-            <div class="flex-container header">
+        <header><!-- start header section -->
+            <div class="flex-container header"><!-- start navigation/brand -->
                 <div class="brand-container flex-container">
                     <img class="brand-logo" src="resources/images/ic-logo.svg" alt="logo">
                     <div class="brand-name">Colmar<span>Academy</span></div>
                 </div>
-                <nav class="mobile-nav">
+                <nav class="mobile-nav"> <!-- start mobil-nav -->
                     <ul class="flex-container">
                         <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
                         <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
                         <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
                         <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
                     </ul>
-                </nav>
+                </nav><!-- end mobil-nav -->
                 <nav class="flex-container main-nav">
                     <ul class="flex-container">
                         <li><a href="#">On Campus</a></li>
@@ -33,10 +35,10 @@
                         <li><a href="#">Sign in</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
-        <main>
-            <section class="flex-container jumbo">
+            </div> <!-- end navigation/brand -->
+        </header><!-- end header section -->
+        <main><!-- start main section -->
+            <section class="flex-container jumbo"> <!-- start jumbotron section -->
                 <div class="banner-img">
                     <img src="./resources/images/banner.jpg" alt="learning girls outside at a wooden desk">
                 </div>
@@ -45,8 +47,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <button>Start here</button>
                 </div>
-            </section>
-            <section class="flex-container content">
+            </section><!-- end jumbotron section -->
+            <section class="flex-container content"> <!-- start story section -->
                 <article class="main-story">
                     <div class="main-img">
                         <img src="./resources/images/information-main.jpg" alt="happy man is reading">
@@ -96,32 +98,35 @@
                         </div>
                     </article>
                 </div>
-            </section>
-            <section class="courses flex-container">
+            </section> <!-- end story section -->
+            <section class="courses flex-container"> <!-- start courses/desktop section -->
                 <h2>Start learning</h2>
                 <div class="row flex-container">
                     <div class="course flex-container">
-                        <div class="course-container-software">
-                            <h3 class="show-info">Software engineering</h3>
+                        <div class="course-container-software show-info">
+                            <h3 class="course-heading"><a href="#">Software engineering</a></h3>
                             <div class="course-information flex-container">
+                                <h3>Software engineering</h3>
                                 <h4>Courses</h4>
                                 <p>Web Development, Mobile Development, iOT, APIs</p>
                             </div>
                         </div>
                     </div>
                     <div class="course flex-container">
-                        <div class="course-container-art">
-                            <h3 class="show-info">Computer art</h3>
+                        <div class="course-container-art show-info">
+                            <h3 class="course-heading"><a href="#">Computer art</a></h3>
                             <div class="course-information flex-container">
+                                <h3>Computer art</h3>
                                 <h4>Courses</h4>
                                 <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                             </div>
                         </div>
                     </div>
                     <div class="course flex-container">
-                         <div class="course-container-design">
-                             <h3 class="show-info">Design</h3>
+                         <div class="course-container-design show-info">
+                             <h3><a href="#">Design</a></h3>
                              <div class="course-information flex-container">
+                                 <h3>Design</h3>
                                  <h4>Courses</h4>
                                  <p>User Experience Design, User Research, Visual Design</p>
                              </div>
@@ -130,44 +135,100 @@
                 </div>
                 <div class="row flex-container">
                     <div class="course flex-container">
-                        <div class="course-container-data">
-                            <h3 class="show-info">Data</h3>
+                        <div class="course-container-data show-info">
+                            <h3><a href="#">Data</a></h3>
                             <div class="course-information flex-container">
+                                <h3>Data</h3>
                                 <h4>Courses</h4>
                                 <p>Data Science, Big Data, SQL, Data Visualization</p>
                             </div>
                         </div>
                     </div>
                     <div class="course flex-container">
-                        <div class="course-container-business">
-                            <h3 class="show-info">Business</h3>
+                        <div class="course-container-business show-info">
+                            <h3><a href="#">Business</a></h3>
                             <div class="course-information flex-container">
+                                <h3>Business</h3>
                                 <h4>Courses</h4>
                                 <p>Product Development, Business, Development Startup</p>
                             </div>
                         </div>
                     </div>
                     <div class="course flex-container">
-                        <div class="course-container-marketing">
-                            <h3 class="show-info">Marketing</h3>
+                        <div class="course-container-marketing show-info">
+                            <h3><a href="#">Marketing</a></h3>
                             <div class="course-information flex-container">
+                                <h3>Marketing</h3>
                                 <h4>Courses</h4>
                                 <p>Analytics, Content Marketing, Mobile Marketing</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>+
-        </main>
+            </section> <!-- end course/desktop section -->
+            <section class="mobil-courses flex-container"> <!-- start mobil courses section -->
+                <h3><a href="#">Software engineering</a></h3>
+                <h3><a href="#">Computer art</a></h3>
+                <h3><a href="#">Design</a></h3>
+                <h3><a href="#">Data</a></h3>
+                <h3><a href="#">Business</a></h3>
+                <h3><a href="#">Marketing</a></h3>
+            </section> <!-- end mobil courses -->
 
+            <section class="flex-container movie-section"><!-- start movie/exhibit section -->
+                <h2>Thesis exhibit</h2>
+                <div class="flex-container">
+                    <div class="movie-container flex-container">
+                        <video src="./resources/videos/thesis.mp4" autoplay></video>
+                        <h3>Reimagine urban</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                            dolor sit amet.</p>
+                    </div>
+                    <div class="movie-side flex-container">
+                        <article class="flex-container">
+                            <div class="movie-img-container">
+                                <img src="./resources/images/thesis-fisma.jpg" alt="">
+                            </div>
+                            <div class="movie-side-content">
+                                <h3>Fisma: Design and Prototype</h3>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </article>
+                        <article class="flex-container">
+                            <div class="movie-img-container">
+                                <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                            </div>
+                            <div class="movie-side-content">
+                                <h3>Now and then</h3>
+                                <p>Research study about New York</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section><!-- end movie/exhibit section -->
+        </main><!-- end main section -->
+        <hr>
+        <footer class="flex-container"><!-- start footer section -->
+            <p class="copyright"> &copy 2016 Colmar Academy. All rights reserved</p>
+            <aside class="flex-container">
+                <span><a href="#">Terms</a></span>
+                <span><a href="#">Privacy</a></span>
+            </aside>
+        </footer><!-- end footer section -->
         <script>
             $( document ).ready(function() {
                 $('.course-information').hide();
-                $ ('.show-info').click(function () {
-                    $(this).next('.course-information').slideToggle('800','');
+                $ ('.show-info').mouseover(function () {
+                    $(this).children('h3').hide();
+                    $(this).children('div').slideDown('400');
+                });
+                $ ('.show-info').mouseleave(function () {
+                    $(this).children('div').slideUp('fast');
+                    $(this).children('h3').delay(300).fadeIn('3000');
                 })
             });
         </script>
-
     </body>
 </html>
